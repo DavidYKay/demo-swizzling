@@ -39,19 +39,15 @@
 
 	OriginalObject *object = [[OriginalObject alloc] init];
 
-	//_before.text = @"Before";
+	// Show the text beforehand
 	_before.text = [object hello];
 
 	NSError *error = nil;
+
 	// Swizzle
-	[Swizzler swizzleMethodsForClass: [OriginalObject class]
-						 oldSelector: @selector(hello)
-						 newSelector: @selector(swizzledHello)
-							   error: &error
-						 ];
 
 
-	//_after.text = @"After";
+	// Show the text afterwards
 	_after.text = [object hello];
 
 }
