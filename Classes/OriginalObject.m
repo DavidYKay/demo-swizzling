@@ -11,7 +11,7 @@
 
 @implementation OriginalObject
 
-- (NSString *)myString {
+- (NSString *)hello {
 	return @"Hello BrainDump";
 }
 

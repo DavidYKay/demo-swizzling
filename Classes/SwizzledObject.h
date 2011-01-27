@@ -1,5 +1,5 @@
 //
-//  OriginalObject.h
+//  SwizzledObject.h
 //  Swizzling
 //
 //  Created by David Young-Chan Kay on 1/27/11.
@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OriginalObject.h"
 
+@interface OriginalObject (Swizzled)
 
-@interface OriginalObject : NSObject {
-
-}
-
-- (NSString *)hello;
+- (NSString *)swizzledHello;
 
 @end

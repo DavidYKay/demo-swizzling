@@ -1,5 +1,5 @@
 //
-//  SwizzleDemo.h
+//  Swizzler.h
 //  Swizzling
 //
 //  Created by David Young-Chan Kay on 1/27/11.
@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SwizzleDemo : NSObject {
+@interface Swizzler : NSObject {
 
 }
+
++ (BOOL)swizzleMethodsForClass:(Class)class oldSelector:(SEL)origSel_ newSelector:(SEL)altSel_ error:(NSError**)error_;
 
 @end

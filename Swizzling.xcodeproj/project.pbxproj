@@ -15,8 +15,11 @@
 		2899E5220DE3E06400AC0155 /* SwizzlingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SwizzlingViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* SwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SwizzlingViewController.m */; };
-		42463AB712F1C1E3008A87C1 /* SwizzleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463AB612F1C1E3008A87C1 /* SwizzleDemo.m */; };
 		42463ABA12F1C212008A87C1 /* OriginalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463AB912F1C212008A87C1 /* OriginalObject.m */; };
+		42463ABF12F1C26E008A87C1 /* SwizzledObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463ABE12F1C26E008A87C1 /* SwizzledObject.m */; };
+		42463C0012F1C660008A87C1 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463B9B12F1C660008A87C1 /* JRSwizzle.m */; };
+		42463C0B12F1C660008A87C1 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 42463BB012F1C660008A87C1 /* README.markdown */; };
+		42463C5F12F1C98A008A87C1 /* Swizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463C5E12F1C98A008A87C1 /* Swizzler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +35,15 @@
 		28D7ACF70DDB3853001CB0EB /* SwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzlingViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Swizzling_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzling_Prefix.pch; sourceTree = "<group>"; };
-		42463AB512F1C1E3008A87C1 /* SwizzleDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzleDemo.h; sourceTree = "<group>"; };
-		42463AB612F1C1E3008A87C1 /* SwizzleDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzleDemo.m; sourceTree = "<group>"; };
 		42463AB812F1C212008A87C1 /* OriginalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalObject.h; sourceTree = "<group>"; };
 		42463AB912F1C212008A87C1 /* OriginalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalObject.m; sourceTree = "<group>"; };
+		42463ABD12F1C26E008A87C1 /* SwizzledObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzledObject.h; sourceTree = "<group>"; };
+		42463ABE12F1C26E008A87C1 /* SwizzledObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzledObject.m; sourceTree = "<group>"; };
+		42463B9A12F1C660008A87C1 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = Libraries/jrswizzle/JRSwizzle.h; sourceTree = SOURCE_ROOT; };
+		42463B9B12F1C660008A87C1 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = Libraries/jrswizzle/JRSwizzle.m; sourceTree = SOURCE_ROOT; };
+		42463BB012F1C660008A87C1 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = Libraries/jrswizzle/README.markdown; sourceTree = SOURCE_ROOT; };
+		42463C5D12F1C98A008A87C1 /* Swizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzler.h; sourceTree = "<group>"; };
+		42463C5E12F1C98A008A87C1 /* Swizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzler.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Swizzling-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Swizzling-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,14 +64,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* SwizzlingAppDelegate.h */,
-				1D3623250D0F684500981E51 /* SwizzlingAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* SwizzlingViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* SwizzlingViewController.m */,
-				42463AB512F1C1E3008A87C1 /* SwizzleDemo.h */,
-				42463AB612F1C1E3008A87C1 /* SwizzleDemo.m */,
+				42463C5C12F1C97B008A87C1 /* Boilerplate */,
 				42463AB812F1C212008A87C1 /* OriginalObject.h */,
 				42463AB912F1C212008A87C1 /* OriginalObject.m */,
+				42463ABD12F1C26E008A87C1 /* SwizzledObject.h */,
+				42463ABE12F1C26E008A87C1 /* SwizzledObject.m */,
+				42463C5D12F1C98A008A87C1 /* Swizzler.h */,
+				42463C5E12F1C98A008A87C1 /* Swizzler.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -79,6 +86,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				42463B0412F1C654008A87C1 /* Libraries */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -115,6 +123,36 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42463B0412F1C654008A87C1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				42463B0512F1C660008A87C1 /* jrswizzle */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		42463B0512F1C660008A87C1 /* jrswizzle */ = {
+			isa = PBXGroup;
+			children = (
+				42463B9A12F1C660008A87C1 /* JRSwizzle.h */,
+				42463B9B12F1C660008A87C1 /* JRSwizzle.m */,
+				42463BB012F1C660008A87C1 /* README.markdown */,
+			);
+			name = jrswizzle;
+			path = Libraries/jrswizzle;
+			sourceTree = SOURCE_ROOT;
+		};
+		42463C5C12F1C97B008A87C1 /* Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* SwizzlingAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SwizzlingAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* SwizzlingViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* SwizzlingViewController.m */,
+			);
+			name = Boilerplate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +206,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* SwizzlingViewController.xib in Resources */,
+				42463C0B12F1C660008A87C1 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +220,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SwizzlingAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* SwizzlingViewController.m in Sources */,
-				42463AB712F1C1E3008A87C1 /* SwizzleDemo.m in Sources */,
 				42463ABA12F1C212008A87C1 /* OriginalObject.m in Sources */,
+				42463ABF12F1C26E008A87C1 /* SwizzledObject.m in Sources */,
+				42463C0012F1C660008A87C1 /* JRSwizzle.m in Sources */,
+				42463C5F12F1C98A008A87C1 /* Swizzler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

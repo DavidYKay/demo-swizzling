@@ -7,10 +7,13 @@
 //
 
 #import "SwizzlingViewController.h"
+#import "OriginalObject.h"
+#import "Swizzler.h"
 
 @implementation SwizzlingViewController
 
-
+#pragma mark -
+#pragma mark Initialization
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -30,13 +33,31 @@
 */
 
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
+	[super viewDidLoad];
 
+	OriginalObject *object = [[OriginalObject alloc] init];
+
+	//_before.text = @"Before";
+	_before.text = [object hello];
+
+	NSError *error = nil;
+	// Swizzle
+	[Swizzler swizzleMethodsForClass: [OriginalObject class]
+						 oldSelector: @selector(hello)
+						 newSelector: @selector(swizzledHello)
+							   error: &error
+						 ];
+
+
+	//_after.text = @"After";
+	_after.text = [object hello];
+
+}
+
+#pragma mark -
+#pragma mark Cleanup, Etc
 
 /*
 // Override to allow orientations other than the default portrait orientation.

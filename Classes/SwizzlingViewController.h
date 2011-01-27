@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SwizzlingViewController : UIViewController {
-
+	IBOutlet UILabel *_before;
+	IBOutlet UILabel *_after;
 }
 
 @end
