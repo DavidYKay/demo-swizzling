@@ -43,9 +43,12 @@
 	_before.text = [object hello];
 
 	NSError *error = nil;
-
 	// Swizzle
-
+	[Swizzler swizzleMethodsForClass: [OriginalObject class]
+						 oldSelector: @selector(hello)
+						 newSelector: @selector(swizzledHello)
+							   error: &error
+	];
 
 	// Show the text afterwards
 	_after.text = [object hello];

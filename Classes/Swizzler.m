@@ -31,14 +31,16 @@
 	// Grab the old method from the original selector
 	Method origMethod = class_getInstanceMethod(class, origSel_);
 	if (!origMethod) {
-		SetNSError(error_, @"original method %@ not found for class %@", NSStringFromSelector(origSel_), [class className]);
+		//SetNSError(error_, @"original method %@ not found for class %@", NSStringFromSelector(origSel_), [class className]);
+		SetNSError(error_, @"original method %@ not found for class %@", NSStringFromSelector(origSel_), class);
 		return NO;
 	}
 	
 	// Grab the new method from the original selector
 	Method altMethod = class_getInstanceMethod(class, altSel_);
 	if (!altMethod) {
-		SetNSError(error_, @"alternate method %@ not found for class %@", NSStringFromSelector(altSel_), [class className]);
+		//SetNSError(error_, @"alternate method %@ not found for class %@", NSStringFromSelector(altSel_), [class className]);
+		SetNSError(error_, @"alternate method %@ not found for class %@", NSStringFromSelector(altSel_), class);
 		return NO;
 	}
 
