@@ -10,8 +10,8 @@
 
 @implementation OriginalObject (Additions)
 
-- (NSString *)hello {
-	return @"fhqwhgads";
-}
+//- (NSString *)hello {
+//	return @"fhqwhgads";
+//}
 
 @end
