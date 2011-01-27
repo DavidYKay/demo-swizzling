@@ -20,6 +20,7 @@
 		42463C0012F1C660008A87C1 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463B9B12F1C660008A87C1 /* JRSwizzle.m */; };
 		42463C0B12F1C660008A87C1 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 42463BB012F1C660008A87C1 /* README.markdown */; };
 		42463C5F12F1C98A008A87C1 /* Swizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463C5E12F1C98A008A87C1 /* Swizzler.m */; };
+		42463D5C12F1D4F3008A87C1 /* ObjectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463D5B12F1D4F3008A87C1 /* ObjectCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		42463BB012F1C660008A87C1 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = Libraries/jrswizzle/README.markdown; sourceTree = SOURCE_ROOT; };
 		42463C5D12F1C98A008A87C1 /* Swizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzler.h; sourceTree = "<group>"; };
 		42463C5E12F1C98A008A87C1 /* Swizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzler.m; sourceTree = "<group>"; };
+		42463D5B12F1D4F3008A87C1 /* ObjectCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectCategory.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Swizzling-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Swizzling-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				42463C5C12F1C97B008A87C1 /* Boilerplate */,
+				42463D5B12F1D4F3008A87C1 /* ObjectCategory.m */,
 				42463AB812F1C212008A87C1 /* OriginalObject.h */,
 				42463AB912F1C212008A87C1 /* OriginalObject.m */,
 				42463ABD12F1C26E008A87C1 /* SwizzledObject.h */,
@@ -224,6 +227,7 @@
 				42463ABF12F1C26E008A87C1 /* SwizzledObject.m in Sources */,
 				42463C0012F1C660008A87C1 /* JRSwizzle.m in Sources */,
 				42463C5F12F1C98A008A87C1 /* Swizzler.m in Sources */,
+				42463D5C12F1D4F3008A87C1 /* ObjectCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
